@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #fff; /* Adjust the font color for better visibility on the background */
+}
+
+#home {
+    background-image: url('C:\\Users\\sreya\\OneDrive\\Desktop\\hci\\pune.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 2em;
+    height: 100vh; /* Cover the full height of the viewport */
+}
+
+header {
+    background-color: #0b0b0b;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+section {
+    padding: 2em;
+    background-color: rgb(19, 18, 18);
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(236, 233, 233, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+#recommendedLocations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+}

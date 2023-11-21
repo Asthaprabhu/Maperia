@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maperia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Maperia</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recommendedLocations">Recommended Locations</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+                <li><a href="#addlocation">Add Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Maperia</h2>
+        <p>Ready to Explore the world?</p>
+    </section>
+
+    <section id="recommendedLocations">
+        <h2>Recommended Locations</h2>
+    
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'tuitionClasses')">Tuition Classes</button>
+            <button class="tablinks" onclick="openTab(event, 'industrialPark')">Industrial Park</button>
+            <button class="tablinks" onclick="openTab(event, 'educationComplex')">Education Complex</button>
+            <button class="tablinks" onclick="openTab(event, 'malls')">Malls</button>
+            <button class="tablinks" onclick="openTab(event, 'banks')">Banks</button>
+            <button class="tablinks" onclick="openTab(event, 'hotels')">Hotels</button>
+            <button class="tablinks" onclick="openTab(event, 'guestHouses')">Guest Houses</button>
+        </div>
+    
+        <div id="tuitionClasses" class="tabcontent">
+           
+        </div>
+    
+        <div id="industrialPark" class="tabcontent">
+          
+        </div>
+    
+        <div id="educationComplex" class="tabcontent">
+            
+        </div>
+    
+        <div id="malls" class="tabcontent">
+           
+        </div>
+    
+        <div id="banks" class="tabcontent">
+            
+        </div>
+    
+        <div id="hotels" class="tabcontent">
+           
+        </div>
+    
+        <div id="guestHouses" class="tabcontent">
+           
+        </div>
+    </section>
+    
+    <section id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </section>
+
+    <section id="signup">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+    
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+    
+            <button type="button" onclick="signup()">Sign Up</button>
+        </form>
+    </section>
+
+    <section id="addlocation">
+        <h2>Add Your Location</h2>
+        <form id="locationForm">
+            <label for="locationName">Location Name:</label>
+            <input type="text" id="locationName" name="locationName" required>
+    
+            <label for="ownerName">Owner Name:</label>
+            <input type="text" id="ownerName" name="ownerName" required>
+    
+            <label for="ownerPhone">Owner Phone Number:</label>
+            <input type="tel" id="ownerPhone" name="ownerPhone" required>
+    
+            <label for="ownerEmail">Owner Email Address:</label>
+            <input type="email" id="ownerEmail" name="ownerEmail" required>
+    
+    
+            <button type="button" onclick="createLocation()">Create Location</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Maperia</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
